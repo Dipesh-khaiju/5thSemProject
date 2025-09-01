@@ -2,7 +2,7 @@ import './App.css';
 import Home from './pages/Home/Home';
 import Cart from "./pages/Cart/Cart"
 // import AllProducts from './components/AllProducts/AllProducts';
-import{ BrowserRouter, Route, Routes, useLocation} from "react-router-dom"
+import{ BrowserRouter, Route, Routes, useLocation, useNavigate} from "react-router-dom"
 import Login from './pages/Login/Login';
 import Signup from './pages/Signup/Signup';
 import {useEffect, useState} from "react";
@@ -108,16 +108,16 @@ function App() {
       <Layout>
       <Suspense fallback={<div className="text-4xl w-full h-screen  items-center flex  justify-center "><h1 className=''>Loading your items...</h1></div>}>
       <Routes>
-      <Route path="/" element={<Home/>} />
-      <Route path="/aboutus" element={<About />} />
-      <Route path="/Contact" element={<Contact />} />
-      <Route path="/cart" element={<Cart cart={cart } addCount={handleAdd} subCount={handleSub} getTotal={getTotal} removeItem={removeItem} />} />  
-      <Route path="/allproducts" element={<AllProducts AddToCart={addToCart} />} />
-       <Route path="/singleproduct/:productid" element={<SingleProduct AddToCart={addToCart} />} /> {/* here productid can be anything buit should match in singleproduct page */}    
-      <Route path="/login" element={<Login />} />  
-      <Route path="/signUP" element={<Signup />} setUserName={setUserName} />
-      <Route path="/admin/*" element={<AdminApp />} />
-     </Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/aboutus" element={<About />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/cart" element={<Cart cart={cart} addCount={handleAdd} subCount={handleSub} getTotal={getTotal} removeItem={removeItem} />} />
+        <Route path="/allproducts" element={<AllProducts AddToCart={addToCart} />} />
+        <Route path="/singleproduct/:productid" element={<SingleProduct AddToCart={addToCart} />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signUP" element={<Signup />} setUserName={setUserName} />
+        <Route path="/admin/*" element={<AdminRoute />} />
+      </Routes>
      </Suspense>
      </Layout>
      </ProductProvider>
@@ -126,5 +126,26 @@ function App() {
        
       </div>
     </>
-  )}
+  )
+}
+
+// Admin route protection component
+const AdminRoute = () => {
+  const role = localStorage.getItem("role");
+  const navigate = useNavigate();
+  
+  useEffect(() => {
+    if (role !== "admin") {
+      // Not admin, redirect to home
+      toast.error("Access denied. Admin privileges required.");
+      navigate("/");
+    }
+  }, [role, navigate]);
+  
+  if (role !== "admin") {
+    return null;
+  }
+  return <AdminApp />;
+};
+
 export default App

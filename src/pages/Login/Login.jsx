@@ -21,19 +21,30 @@ const Login = () => {
   const handleSignup = (e) => {
     e.preventDefault();
     if ( !userSignup.email || !userSignup.password) {
-      // alert("Enter All fields")
       return toast.error("All fields must be completed");
     } else {
-       signInWithEmailAndPassword(
+      signInWithEmailAndPassword(
         auth,
         userSignup.email,
         userSignup.password
       )
-        .then( (res) => {
-          navigateLogin("/");
-          window.location.reload();
+        .then((res) => {
+          // Set role in localStorage
+          if (userSignup.email === "khaijudipesh1@gmail.com") {
+            localStorage.setItem("role", "admin");
+            toast.success("Login successful! Redirecting to admin dashboard...");
+            setTimeout(() => {
+              navigateLogin("/admin");
+            }, 1000);
+          } else {
+            localStorage.setItem("role", "user");
+            toast.success("Login successful!");
+            setTimeout(() => {
+              navigateLogin("/");
+            }, 1000);
+          }
         })
-        .catch((err) => toast.error(err.message)); // Abdul.Muneer@dpworld.com
+        .catch((err) => toast.error(err.message));
     }
   };
 

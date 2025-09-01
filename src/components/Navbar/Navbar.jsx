@@ -2,13 +2,20 @@ import { FaCartArrowDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { signOut,getAuth } from "firebase/auth";
 import toast from "react-hot-toast";
 
 
 const Navbar = ({ Carter, userName }) => {
   const [show, setShow] = useState(false);
+  const [userRole, setUserRole] = useState(null);
+  
+  // Check user role from localStorage
+  useEffect(() => {
+    const role = localStorage.getItem("role");
+    setUserRole(role);
+  }, [userName]); // Re-check when userName changes (login/logout)
   const toogleChange = () => {
     show === false ? setShow(true) : setShow(false);
   };
@@ -18,6 +25,9 @@ const Navbar = ({ Carter, userName }) => {
 const handleLogout =()=>{
   const auth = getAuth();
 signOut(auth).then(() => {
+  // Clear role from localStorage on logout
+  localStorage.removeItem("role");
+  setUserRole(null); // Clear role state
   toast.success("Logged Out Successfully")
 }).catch((error) => {
   console.log(error)
@@ -56,11 +66,13 @@ signOut(auth).then(() => {
                   Contact 
                 </li>
                 </Link>
-                <Link to="/admin">
-                <li className="mr-7 hover:text-blue-600 cursor-pointer text-blue-500 font-bold">
-                  Admin
-                </li>
-                </Link>
+                {userRole === "admin" && (
+                  <Link to="/admin">
+                  <li className="mr-7 hover:text-blue-600 cursor-pointer text-blue-500 font-bold">
+                    Admin
+                  </li>
+                  </Link>
+                )}
             
               </ul>
             </div>
@@ -87,11 +99,13 @@ signOut(auth).then(() => {
                    Contact 
                   </li>
                     </Link>
-                    <Link to="/admin">
-                    <li className="mt-5 hover:text-blue-300 cursor-pointer text-blue-200 font-bold">
-                   Admin
-                  </li>
-                    </Link>
+                    {userRole === "admin" && (
+                      <Link to="/admin">
+                      <li className="mt-5 hover:text-blue-300 cursor-pointer text-blue-200 font-bold">
+                     Admin
+                    </li>
+                      </Link>
+                    )}
 
                 </ul>
                 <button
