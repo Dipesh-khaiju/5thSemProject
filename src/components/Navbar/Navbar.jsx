@@ -56,6 +56,11 @@ signOut(auth).then(() => {
                   Contact 
                 </li>
                 </Link>
+                <Link to="/admin">
+                <li className="mr-7 hover:text-blue-600 cursor-pointer text-blue-500 font-bold">
+                  Admin
+                </li>
+                </Link>
             
               </ul>
             </div>
@@ -80,6 +85,11 @@ signOut(auth).then(() => {
                     <Link to="/contact">
                     <li className="mt-5 hover:text-gray-900 cursor-pointer">
                    Contact 
+                  </li>
+                    </Link>
+                    <Link to="/admin">
+                    <li className="mt-5 hover:text-blue-300 cursor-pointer text-blue-200 font-bold">
+                   Admin
                   </li>
                     </Link>
 

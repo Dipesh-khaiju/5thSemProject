@@ -1,0 +1,659 @@
+{
+    "success": true,
+    "currentPage": 1,
+    "totalPages": 1,
+    "count": 10,
+    "total": 10,
+    "products": [
+        {
+            "_id": "67f5d71c64172ac622d6cf62",
+            "id": 3,
+            "title": "Powder Canister",
+            "description": "The Powder Canister is a finely milled setting powder designed to set makeup and control shine. With a lightweight and translucent formula, it provides a smooth and matte finish.",
+            "category": "beauty",
+            "price": 14.99,
+            "discountPercentage": 18.14,
+            "rating": 3.82,
+            "stock": 59,
+            "tags": [
+                "beauty",
+                "face powder"
+            ],
+            "brand": "Velvet Touch",
+            "sku": "9EN8WLT2",
+            "weight": 8,
+            "dimensions": {
+                "width": 24.16,
+                "height": 10.7,
+                "depth": 11.07,
+                "_id": "68b55f0962d167c94f0fa30b"
+            },
+            "warrantyInformation": "2 year warranty",
+            "shippingInformation": "Ships in 1-2 business days",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "_id": "68b55f0962d167c94f0fa30c",
+                    "rating": 5,
+                    "comment": "Very happy with my purchase!",
+                    "date": "2024-05-23T08:56:21.618Z",
+                    "reviewerName": "Ethan Thompson",
+                    "reviewerEmail": "ethan.thompson@x.dummyjson.com"
+                },
+                {
+                    "_id": "68b55f0962d167c94f0fa30d",
+                    "rating": 4,
+                    "comment": "Great value for money!",
+                    "date": "2024-05-23T08:56:21.618Z",
+                    "reviewerName": "Levi Hicks",
+                    "reviewerEmail": "levi.hicks@x.dummyjson.com"
+                },
+                {
+                    "_id": "68b55f0962d167c94f0fa30e",
+                    "rating": 5,
+                    "comment": "Highly impressed!",
+                    "date": "2024-05-23T08:56:21.618Z",
+                    "reviewerName": "Hazel Gardner",
+                    "reviewerEmail": "hazel.gardner@x.dummyjson.com"
+                }
+            ],
+            "returnPolicy": "60 days return policy",
+            "minimumOrderQuantity": 25,
+            "meta": {
+                "createdAt": "2024-05-23T08:56:21.618Z",
+                "updatedAt": "2024-05-23T08:56:21.618Z",
+                "barcode": "0516267971277",
+                "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+            },
+            "images": [
+                "https://cdn.dummyjson.com/products/images/beauty/Powder%20Canister/1.png"
+            ],
+            "thumbnail": "https://cdn.dummyjson.com/products/images/beauty/Powder%20Canister/thumbnail.png"
+        },
+        {
+            "_id": "67f5d71c64172ac622d6cf60",
+            "id": 1,
+            "title": "Essence Mascara Lash Princess",
+            "description": "The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.",
+            "category": "beauty",
+            "price": 9.99,
+            "discountPercentage": 7.17,
+            "rating": 4.94,
+            "stock": 5,
+            "tags": [
+                "beauty",
+                "mascara"
+            ],
+            "brand": "Essence",
+            "sku": "RCH45Q1A",
+            "weight": 2,
+            "dimensions": {
+                "width": 23.17,
+                "height": 14.43,
+                "depth": 28.01,
+                "_id": "68b55f0962d167c94f0fa30f"
+            },
+            "warrantyInformation": "1 month warranty",
+            "shippingInformation": "Ships in 1 month",
+            "availabilityStatus": "Low Stock",
+            "reviews": [
+                {
+                    "_id": "68b55f0962d167c94f0fa310",
+                    "rating": 2,
+                    "comment": "Very unhappy with my purchase!",
+                    "date": "2024-05-23T08:56:21.618Z",
+                    "reviewerName": "John Doe",
+                    "reviewerEmail": "john.doe@x.dummyjson.com"
+                },
+                {
+                    "_id": "68b55f0962d167c94f0fa311",
+                    "rating": 2,
+                    "comment": "Not as described!",
+                    "date": "2024-05-23T08:56:21.618Z",
+                    "reviewerName": "Nolan Gonzalez",
+                    "reviewerEmail": "nolan.gonzalez@x.dummyjson.com"
+                },
+                {
+                    "_id": "68b55f0962d167c94f0fa312",
+                    "rating": 5,
+                    "comment": "Very satisfied!",
+                    "date": "2024-05-23T08:56:21.618Z",
+                    "reviewerName": "Scarlett Wright",
+                    "reviewerEmail": "scarlett.wright@x.dummyjson.com"
+                }
+            ],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 24,
+            "meta": {
+                "createdAt": "2024-05-23T08:56:21.618Z",
+                "updatedAt": "2024-05-23T08:56:21.618Z",
+                "barcode": "9164035109868",
+                "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+            },
+            "images": [
+                "https://cdn.dummyjson.com/products/images/beauty/Essence%20Mascara%20Lash%20Princess/1.png"
+            ],
+            "thumbnail": "https://cdn.dummyjson.com/products/images/beauty/Essence%20Mascara%20Lash%20Princess/thumbnail.png"
+        },
+        {
+            "_id": "67f5d71c64172ac622d6cf61",
+            "id": 2,
+            "title": "Eyeshadow Palette with Mirror",
+            "description": "The Eyeshadow Palette with Mirror offers a versatile range of eyeshadow shades for creating stunning eye looks. With a built-in mirror, it's convenient for on-the-go makeup application.",
+            "category": "beauty",
+            "price": 19.99,
+            "discountPercentage": 5.5,
+            "rating": 3.28,
+            "stock": 44,
+            "tags": [
+                "beauty",
+                "eyeshadow"
+            ],
+            "brand": "Glamour Beauty",
+            "sku": "MVCFH27F",
+            "weight": 3,
+            "dimensions": {
+                "width": 12.42,
+                "height": 8.63,
+                "depth": 29.13,
+                "_id": "68b55f0962d167c94f0fa313"
+            },
+            "warrantyInformation": "1 year warranty",
+            "shippingInformation": "Ships in 2 weeks",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "_id": "68b55f0962d167c94f0fa314",
+                    "rating": 4,
+                    "comment": "Very satisfied!",
+                    "date": "2024-05-23T08:56:21.618Z",
+                    "reviewerName": "Liam Garcia",
+                    "reviewerEmail": "liam.garcia@x.dummyjson.com"
+                },
+                {
+                    "_id": "68b55f0962d167c94f0fa315",
+                    "rating": 1,
+                    "comment": "Very disappointed!",
+                    "date": "2024-05-23T08:56:21.618Z",
+                    "reviewerName": "Nora Russell",
+                    "reviewerEmail": "nora.russell@x.dummyjson.com"
+                },
+                {
+                    "_id": "68b55f0962d167c94f0fa316",
+                    "rating": 5,
+                    "comment": "Highly impressed!",
+                    "date": "2024-05-23T08:56:21.618Z",
+                    "reviewerName": "Elena Baker",
+                    "reviewerEmail": "elena.baker@x.dummyjson.com"
+                }
+            ],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 32,
+            "meta": {
+                "createdAt": "2024-05-23T08:56:21.618Z",
+                "updatedAt": "2024-05-23T08:56:21.618Z",
+                "barcode": "2817839095220",
+                "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+            },
+            "images": [
+                "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/1.png"
+            ],
+            "thumbnail": "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/thumbnail.png"
+        },
+        {
+            "_id": "67f5d71c64172ac622d6cf65",
+            "id": 100,
+            "title": "Hydrating Face Serum",
+            "description": "Dummy description for Hydrating Face Serum.",
+            "category": "beauty",
+            "price": 27.46,
+            "discountPercentage": 8.24,
+            "rating": 4.4,
+            "stock": 81,
+            "tags": [
+                "beauty",
+                "face serum"
+            ],
+            "brand": "GlowLabs",
+            "sku": "DUMMYSKU0",
+            "weight": 3,
+            "dimensions": {
+                "width": 17.83,
+                "height": 16.66,
+                "depth": 18.71,
+                "_id": "68b55f0962d167c94f0fa317"
+            },
+            "warrantyInformation": "1 year warranty",
+            "shippingInformation": "Ships in 1 week",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "_id": "68b55f0962d167c94f0fa318",
+                    "rating": 4,
+                    "comment": "Will buy again!",
+                    "date": "2025-04-09T02:04:51.184Z",
+                    "reviewerName": "Alice Smith",
+                    "reviewerEmail": "alice@dummy.com"
+                },
+                {
+                    "_id": "68b55f0962d167c94f0fa319",
+                    "rating": 5,
+                    "comment": "Will buy again!",
+                    "date": "2025-04-09T02:04:51.184Z",
+                    "reviewerName": "Bob Johnson",
+                    "reviewerEmail": "bob@dummy.com"
+                },
+                {
+                    "_id": "68b55f0962d167c94f0fa31a",
+                    "rating": 5,
+                    "comment": "Will buy again!",
+                    "date": "2025-04-09T02:04:51.184Z",
+                    "reviewerName": "Charlie Lee",
+                    "reviewerEmail": "charlie@dummy.com"
+                }
+            ],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 5,
+            "meta": {
+                "createdAt": "2025-04-09T02:04:51.184868Z",
+                "updatedAt": "2025-04-09T02:04:51.184870Z",
+                "barcode": "2912346387140",
+                "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+            },
+            "images": [
+                "https://cdn.dummyjson.com/products/images/beauty/dummy0.png"
+            ],
+            "thumbnail": "https://plus.unsplash.com/premium_photo-1670514095985-fc253f2e86c6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29zbWV0aWNzfGVufDB8fDB8fHww"
+        },
+        {
+            "_id": "67f5d71c64172ac622d6cf66",
+            "id": 101,
+            "title": "Matte Liquid Lipstick",
+            "description": "Dummy description for Matte Liquid Lipstick.",
+            "category": "beauty",
+            "price": 7.63,
+            "discountPercentage": 11.26,
+            "rating": 4.69,
+            "stock": 55,
+            "tags": [
+                "beauty",
+                "lipstick"
+            ],
+            "brand": "LuxeBeauty",
+            "sku": "DUMMYSKU1",
+            "weight": 5,
+            "dimensions": {
+                "width": 23.7,
+                "height": 16.23,
+                "depth": 13.07,
+                "_id": "68b55f0962d167c94f0fa31b"
+            },
+            "warrantyInformation": "1 year warranty",
+            "shippingInformation": "Ships in 1 week",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "_id": "68b55f0962d167c94f0fa31c",
+                    "rating": 5,
+                    "comment": "Good quality.",
+                    "date": "2025-04-09T02:04:51.184Z",
+                    "reviewerName": "Alice Smith",
+                    "reviewerEmail": "alice@dummy.com"
+                },
+                {
+                    "_id": "68b55f0962d167c94f0fa31d",
+                    "rating": 3,
+                    "comment": "Loved it!",
+                    "date": "2025-04-09T02:04:51.184Z",
+                    "reviewerName": "Bob Johnson",
+                    "reviewerEmail": "bob@dummy.com"
+                },
+                {
+                    "_id": "68b55f0962d167c94f0fa31e",
+                    "rating": 4,
+                    "comment": "Good quality.",
+                    "date": "2025-04-09T02:04:51.184Z",
+                    "reviewerName": "Charlie Lee",
+                    "reviewerEmail": "charlie@dummy.com"
+                }
+            ],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 7,
+            "meta": {
+                "createdAt": "2025-04-09T02:04:51.184909Z",
+                "updatedAt": "2025-04-09T02:04:51.184911Z",
+                "barcode": "9719325929030",
+                "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+            },
+            "images": [
+                "https://images.unsplash.com/photo-1613255348289-1407e4f2f980?q=80&w=2030&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            ],
+            "thumbnail": "https://images.unsplash.com/photo-1613255348289-1407e4f2f980?q=80&w=2030&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+            "_id": "67f5d71c64172ac622d6cf64",
+            "id": 5,
+            "title": "Red Nail Polish",
+            "description": "The Red Nail Polish offers a rich and glossy red hue for vibrant and polished nails. With a quick-drying formula, it provides a salon-quality finish at home.",
+            "category": "beauty",
+            "price": 8.99,
+            "discountPercentage": 2.46,
+            "rating": 3.91,
+            "stock": 71,
+            "tags": [
+                "beauty",
+                "nail polish"
+            ],
+            "brand": "Nail Couture",
+            "sku": "YUIIIP4W",
+            "weight": 9,
+            "dimensions": {
+                "width": 8.11,
+                "height": 10.89,
+                "depth": 29.06,
+                "_id": "68b55f0962d167c94f0fa31f"
+            },
+            "warrantyInformation": "1 year warranty",
+            "shippingInformation": "Ships in 1 week",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "_id": "68b55f0962d167c94f0fa320",
+                    "rating": 5,
+                    "comment": "Very pleased!",
+                    "date": "2024-05-23T08:56:21.619Z",
+                    "reviewerName": "Leo Rivera",
+                    "reviewerEmail": "leo.rivera@x.dummyjson.com"
+                },
+                {
+                    "_id": "68b55f0962d167c94f0fa321",
+                    "rating": 5,
+                    "comment": "Great product!",
+                    "date": "2024-05-23T08:56:21.619Z",
+                    "reviewerName": "Evan Reed",
+                    "reviewerEmail": "evan.reed@x.dummyjson.com"
+                },
+                {
+                    "_id": "68b55f0962d167c94f0fa322",
+                    "rating": 4,
+                    "comment": "Highly recommended!",
+                    "date": "2024-05-23T08:56:21.619Z",
+                    "reviewerName": "Evelyn Sanchez",
+                    "reviewerEmail": "evelyn.sanchez@x.dummyjson.com"
+                }
+            ],
+            "returnPolicy": "No return policy",
+            "minimumOrderQuantity": 46,
+            "meta": {
+                "createdAt": "2024-05-23T08:56:21.619Z",
+                "updatedAt": "2024-05-23T08:56:21.619Z",
+                "barcode": "3212847902461",
+                "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+            },
+            "images": [
+                "https://cdn.dummyjson.com/products/images/beauty/Red%20Nail%20Polish/1.png"
+            ],
+            "thumbnail": "https://cdn.dummyjson.com/products/images/beauty/Red%20Nail%20Polish/thumbnail.png"
+        },
+        {
+            "_id": "67f5d71c64172ac622d6cf67",
+            "id": 102,
+            "title": "Brow Defining Pencil",
+            "description": "Dummy description for Brow Defining Pencil.",
+            "category": "beauty",
+            "price": 12.44,
+            "discountPercentage": 9.91,
+            "rating": 4.64,
+            "stock": 41,
+            "tags": [
+                "beauty",
+                "brow pencil"
+            ],
+            "brand": "ArchStyle",
+            "sku": "DUMMYSKU2",
+            "weight": 5,
+            "dimensions": {
+                "width": 19.63,
+                "height": 26.08,
+                "depth": 11.64,
+                "_id": "68b55f0962d167c94f0fa323"
+            },
+            "warrantyInformation": "1 year warranty",
+            "shippingInformation": "Ships in 1 week",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "_id": "68b55f0962d167c94f0fa324",
+                    "rating": 4,
+                    "comment": "Loved it!",
+                    "date": "2025-04-09T02:04:51.184Z",
+                    "reviewerName": "Alice Smith",
+                    "reviewerEmail": "alice@dummy.com"
+                },
+                {
+                    "_id": "68b55f0962d167c94f0fa325",
+                    "rating": 3,
+                    "comment": "Good quality.",
+                    "date": "2025-04-09T02:04:51.184Z",
+                    "reviewerName": "Bob Johnson",
+                    "reviewerEmail": "bob@dummy.com"
+                },
+                {
+                    "_id": "68b55f0962d167c94f0fa326",
+                    "rating": 4,
+                    "comment": "Loved it!",
+                    "date": "2025-04-09T02:04:51.184Z",
+                    "reviewerName": "Charlie Lee",
+                    "reviewerEmail": "charlie@dummy.com"
+                }
+            ],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 14,
+            "meta": {
+                "createdAt": "2025-04-09T02:04:51.184963Z",
+                "updatedAt": "2025-04-09T02:04:51.184965Z",
+                "barcode": "1230458503010",
+                "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+            },
+            "images": [
+                "https://images.unsplash.com/photo-1521840233161-295ed621e056?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fGNvc21ldGljc3xlbnwwfHwwfHx8MA%3D%3D"
+            ],
+            "thumbnail": "https://images.unsplash.com/photo-1521840233161-295ed621e056?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fGNvc21ldGljc3xlbnwwfHwwfHx8MA%3D%3D"
+        },
+        {
+            "_id": "67f5d71c64172ac622d6cf63",
+            "id": 4,
+            "title": "Red Lipstick",
+            "description": "The Red Lipstick is a classic and bold choice for adding a pop of color to your lips. With a creamy and pigmented formula, it provides a vibrant and long-lasting finish.",
+            "category": "beauty",
+            "price": 12.99,
+            "discountPercentage": 19.03,
+            "rating": 2.51,
+            "stock": 68,
+            "tags": [
+                "beauty",
+                "lipstick"
+            ],
+            "brand": "Chic Cosmetics",
+            "sku": "O5IF1NTA",
+            "weight": 5,
+            "dimensions": {
+                "width": 14.37,
+                "height": 13.94,
+                "depth": 14.6,
+                "_id": "68b55f0962d167c94f0fa327"
+            },
+            "warrantyInformation": "Lifetime warranty",
+            "shippingInformation": "Ships in 2 weeks",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "_id": "68b55f0962d167c94f0fa328",
+                    "rating": 5,
+                    "comment": "Great product!",
+                    "date": "2024-05-23T08:56:21.619Z",
+                    "reviewerName": "Leo Rivera",
+                    "reviewerEmail": "leo.rivera@x.dummyjson.com"
+                },
+                {
+                    "_id": "68b55f0962d167c94f0fa329",
+                    "rating": 4,
+                    "comment": "Very pleased!",
+                    "date": "2024-05-23T08:56:21.619Z",
+                    "reviewerName": "Oscar Powers",
+                    "reviewerEmail": "oscar.powers@x.dummyjson.com"
+                },
+                {
+                    "_id": "68b55f0962d167c94f0fa32a",
+                    "rating": 5,
+                    "comment": "Very pleased!",
+                    "date": "2024-05-23T08:56:21.619Z",
+                    "reviewerName": "Carter Rivera",
+                    "reviewerEmail": "carter.rivera@x.dummyjson.com"
+                }
+            ],
+            "returnPolicy": "90 days return policy",
+            "minimumOrderQuantity": 6,
+            "meta": {
+                "createdAt": "2024-05-23T08:56:21.619Z",
+                "updatedAt": "2024-05-23T08:56:21.619Z",
+                "barcode": "9444582199406",
+                "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+            },
+            "images": [
+                "https://cdn.dummyjson.com/products/images/beauty/Red%20Lipstick/1.png"
+            ],
+            "thumbnail": "https://cdn.dummyjson.com/products/images/beauty/Red%20Lipstick/thumbnail.png"
+        },
+        {
+            "_id": "67f5d71c64172ac622d6cf69",
+            "id": 104,
+            "title": "Waterproof Eyeliner Pen",
+            "description": "Dummy description for Waterproof Eyeliner Pen.",
+            "category": "beauty",
+            "price": 10.29,
+            "discountPercentage": 14.44,
+            "rating": 3.96,
+            "stock": 73,
+            "tags": [
+                "beauty",
+                "eyeliner"
+            ],
+            "brand": "EyeSharp",
+            "sku": "DUMMYSKU4",
+            "weight": 2,
+            "dimensions": {
+                "width": 18.37,
+                "height": 24.53,
+                "depth": 24.88,
+                "_id": "68b55f0962d167c94f0fa32b"
+            },
+            "warrantyInformation": "1 year warranty",
+            "shippingInformation": "Ships in 1 week",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "_id": "68b55f0962d167c94f0fa32c",
+                    "rating": 5,
+                    "comment": "Will buy again!",
+                    "date": "2025-04-09T02:04:51.185Z",
+                    "reviewerName": "Alice Smith",
+                    "reviewerEmail": "alice@dummy.com"
+                },
+                {
+                    "_id": "68b55f0962d167c94f0fa32d",
+                    "rating": 3,
+                    "comment": "Will buy again!",
+                    "date": "2025-04-09T02:04:51.185Z",
+                    "reviewerName": "Bob Johnson",
+                    "reviewerEmail": "bob@dummy.com"
+                },
+                {
+                    "_id": "68b55f0962d167c94f0fa32e",
+                    "rating": 3,
+                    "comment": "Loved it!",
+                    "date": "2025-04-09T02:04:51.185Z",
+                    "reviewerName": "Charlie Lee",
+                    "reviewerEmail": "charlie@dummy.com"
+                }
+            ],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 18,
+            "meta": {
+                "createdAt": "2025-04-09T02:04:51.185018Z",
+                "updatedAt": "2025-04-09T02:04:51.185019Z",
+                "barcode": "5570356055117",
+                "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+            },
+            "images": [
+                "https://images.unsplash.com/photo-1668255446079-b15fd061735d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZXllbGluZXJ8ZW58MHx8MHx8fDA%3D"
+            ],
+            "thumbnail": "https://images.unsplash.com/photo-1668255446079-b15fd061735d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZXllbGluZXJ8ZW58MHx8MHx8fDA%3D"
+        },
+        {
+            "_id": "67f5d71c64172ac622d6cf68",
+            "id": 103,
+            "title": "Radiant Blush Palette",
+            "description": "Dummy description for Radiant Blush Palette.",
+            "category": "beauty",
+            "price": 13.78,
+            "discountPercentage": 7.36,
+            "rating": 3.57,
+            "stock": 69,
+            "tags": [
+                "beauty",
+                "blush"
+            ],
+            "brand": "ColorPop",
+            "sku": "DUMMYSKU3",
+            "weight": 7,
+            "dimensions": {
+                "width": 20.07,
+                "height": 11.53,
+                "depth": 23.67,
+                "_id": "68b55f0962d167c94f0fa32f"
+            },
+            "warrantyInformation": "1 year warranty",
+            "shippingInformation": "Ships in 1 week",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "_id": "68b55f0962d167c94f0fa330",
+                    "rating": 5,
+                    "comment": "Good quality.",
+                    "date": "2025-04-09T02:04:51.184Z",
+                    "reviewerName": "Alice Smith",
+                    "reviewerEmail": "alice@dummy.com"
+                },
+                {
+                    "_id": "68b55f0962d167c94f0fa331",
+                    "rating": 5,
+                    "comment": "Will buy again!",
+                    "date": "2025-04-09T02:04:51.184Z",
+                    "reviewerName": "Bob Johnson",
+                    "reviewerEmail": "bob@dummy.com"
+                },
+                {
+                    "_id": "68b55f0962d167c94f0fa332",
+                    "rating": 4,
+                    "comment": "Good quality.",
+                    "date": "2025-04-09T02:04:51.184Z",
+                    "reviewerName": "Charlie Lee",
+                    "reviewerEmail": "charlie@dummy.com"
+                }
+            ],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 7,
+            "meta": {
+                "createdAt": "2025-04-09T02:04:51.184991Z",
+                "updatedAt": "2025-04-09T02:04:51.184993Z",
+                "barcode": "1226807475096",
+                "qrCode": "https://assets.dummyjson.com/public/qr-code.png"
+            },
+            "images": [
+                "https://media.istockphoto.com/id/2155031694/photo/a-set-of-makeup-brushes-and-beauty-products-arranged-on-a-desk-at-the-beauticians-salon.webp?a=1&b=1&s=612x612&w=0&k=20&c=2NtT9UCSdeOsURYhn5Hx5YR0a0wvPFZJOXJYBE9zGEA="
+            ],
+            "thumbnail": "https://media.istockphoto.com/id/2155031694/photo/a-set-of-makeup-brushes-and-beauty-products-arranged-on-a-desk-at-the-beauticians-salon.webp?a=1&b=1&s=612x612&w=0&k=20&c=2NtT9UCSdeOsURYhn5Hx5YR0a0wvPFZJOXJYBE9zGEA="
+        }
+    ]
+}

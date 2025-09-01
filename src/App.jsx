@@ -2,7 +2,7 @@ import './App.css';
 import Home from './pages/Home/Home';
 import Cart from "./pages/Cart/Cart"
 // import AllProducts from './components/AllProducts/AllProducts';
-import{ BrowserRouter, Route, Routes} from "react-router-dom"
+import{ BrowserRouter, Route, Routes, useLocation} from "react-router-dom"
 import Login from './pages/Login/Login';
 import Signup from './pages/Signup/Signup';
 import {useEffect, useState} from "react";
@@ -16,6 +16,7 @@ import About from './pages/AboutUs/About';
 import Contact from './pages/Contact/Contact';
 import {lazy,Suspense} from "react";
 import { ProductProvider } from './context/ProductContext';
+import { AdminApp } from './admin';
 const AllProducts = lazy(() => import('./components/AllProducts/AllProducts'));
 
 
@@ -85,27 +86,42 @@ function App() {
     });  
   },[setUserName])
 
+  // Layout component to conditionally render navbar and footer
+  const Layout = ({ children }) => {
+    const location = useLocation();
+    const isAdminRoute = location.pathname.startsWith('/admin');
+
+    return (
+      <>
+        {!isAdminRoute && <Navbar Carter={cart} userName={userName} />}
+        {children}
+        {!isAdminRoute && <Footer />}
+      </>
+    );
+  };
+
     return (
       <>
       <div>
       <BrowserRouter>
       <ProductProvider>
-      <Navbar Carter={cart} userName={userName} />
+      <Layout>
       <Suspense fallback={<div className="text-4xl w-full h-screen  items-center flex  justify-center "><h1 className=''>Loading your items...</h1></div>}>
       <Routes>
       <Route path="/" element={<Home/>} />
       <Route path="/aboutus" element={<About />} />
       <Route path="/Contact" element={<Contact />} />
       <Route path="/cart" element={<Cart cart={cart } addCount={handleAdd} subCount={handleSub} getTotal={getTotal} removeItem={removeItem} />} />  
-      <Route path="/allproducts" element={<AllProducts AddToCart={addToCart} />} /> 
+      <Route path="/allproducts" element={<AllProducts AddToCart={addToCart} />} />
        <Route path="/singleproduct/:productid" element={<SingleProduct AddToCart={addToCart} />} /> {/* here productid can be anything buit should match in singleproduct page */}    
       <Route path="/login" element={<Login />} />  
-      <Route path="/signUP" element={<Signup />} setUserName={setUserName} />  
+      <Route path="/signUP" element={<Signup />} setUserName={setUserName} />
+      <Route path="/admin/*" element={<AdminApp />} />
      </Routes>
      </Suspense>
+     </Layout>
      </ProductProvider>
      <Toaster />
-     <Footer/>
       </BrowserRouter>
        
       </div>
