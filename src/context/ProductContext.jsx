@@ -12,7 +12,7 @@ export const ProductProvider = ({ children }) => {
     const fetchAllProducts = async () => {
       try {
         setLoading(true);
-        const res = await axios("https://khaijushop-server.onrender.com/api/products");
+        const res = await axios("https://khaijushop-server.onrender.com/api/products?limit=100");
         setAllProducts(res.data.products);
         setLoading(false);
       } catch (err) {

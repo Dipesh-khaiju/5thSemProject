@@ -119,57 +119,48 @@ signOut(auth).then(() => {
               ""
             )}
 
-            <div className="flex justify-center items-center gap-3">
-            
-
-              {
-                userName ? 
-                (
+            <div className="flex justify-center items-center gap-4 sm:gap-6">
+              {userName ? (
+                <>
                   <Link to="/login">
-                <button onClick={handleLogout} className="bg-red-500 hover:bg-blue-500 text-white font-bold py-1 sm:py-2 sm-px-5 px-1 lg:py-3 lg:px-5 text-xs md:text-base rounded-lg shadow-lg hover:text-white transform transition-all duration-500 ease-in-out hover:scale-105 hover:brightness-110 hover:animate-pulse active:animate-bounce">
-                  Log Out
-                </button>
-              </Link>
-                )
-                :
-                 (  <Link to="/login">
-                <button className="bg-red-500 hover:bg-blue-500 text-white font-bold py-1 px-1 sm:py-2 sm-px-3 lg:py-3 lg:px-5 text-sm md:text-base rounded-lg shadow-lg hover:text-white transform transition-all duration-500 ease-in-out hover:scale-105 hover:brightness-110 hover:animate-pulse active:animate-bounce">
-                  Log In
-                </button>
-              </Link>)
-
-              }
-
-              <Link to="/cart">
-                <button className="ml-4 relative">
-                  <span className="absolute top-[-5px] bg-[red] right-0 text-white px-1 rounded-full text-xs z-index z-10">
-                    {Carter.length}
-                  </span>
-                  <FaCartArrowDown className="relative  md:size-[25px]" size={20} />
-                </button>{" "}
-              </Link>
-
-              {show ? (
-                " "
+                    <button
+                      onClick={handleLogout}
+                      className="bg-red-500 hover:bg-red-600 text-white font-medium py-1.5 px-4 text-sm md:text-base rounded shadow transition-colors"
+                    >
+                      Log Out
+                    </button>
+                  </Link>
+                </>
               ) : (
-                <button onClick={toogleChange} className="block md:hidden">
-                  <GiHamburgerMenu className="md:size-[25px] " size={20} />
+                <Link to="/login">
+                  <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-1.5 px-4 text-sm md:text-base rounded shadow transition-colors">
+                    Log In
+                  </button>
+                </Link>
+              )}
+
+              <div className="flex items-center gap-4">
+                <Link to="/cart">
+                  <button className="relative flex items-center">
+                    <span className="absolute -top-2 -right-2 bg-red-500 text-white text-[10px] font-bold min-w-[18px] h-[18px] flex items-center justify-center rounded-full px-1 z-10">
+                      {Carter?.length || 0}
+                    </span>
+                    <FaCartArrowDown className="text-gray-700 hover:text-gray-900 transition-colors" size={24} />
+                  </button>
+                </Link>
+
+                {userName && (
+                  <div className="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-blue-100 border border-blue-200 text-blue-700 font-bold text-sm sm:text-base uppercase" title={userName}>
+                    {userName.substring(0, 2)}
+                  </div>
+                )}
+              </div>
+
+              {!show && (
+                <button onClick={toogleChange} className="block md:hidden p-1 text-gray-700 hover:text-gray-900 transition-colors">
+                  <GiHamburgerMenu size={24} />
                 </button>
               )}
-              {/* <span className="text-xs md:text-sm m-auto absolute z-10 right-[25px] hidden sm:block top-[40px] text-center">
-                {userName}
-              </span> */}
-
-              <div className=" ">
-              {
-                userName ? ( <div className="  rounded-full border-2 p-1  text-sm md:text-lg top-5 left-8">
-                         {userName.substring(0,2)} {/* can usw slice too */}
-                   </div>)
-                   :
-                   ("")
-              }
-                
-              </div>
             </div>
           </div>
         </header>

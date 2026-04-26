@@ -22,11 +22,11 @@ const OrderDone = ({ cart, validateForm, onSuccess }) => {
       const url = "https://khaijushop-server.onrender.com/api/createOrder";
       const data = {
         amount: getTotal() + 10,
-        products: [{
-          product: "test",
-          amount: getTotal() + 10,
-          quantity: 1
-        }]
+        products: cart.map((item) => ({
+          product: item._id || item.id,
+          amount: item.price,
+          quantity: item.quantity
+        }))
       };
       
       try {

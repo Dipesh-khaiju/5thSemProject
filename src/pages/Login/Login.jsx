@@ -30,7 +30,7 @@ const Login = () => {
       )
         .then((res) => {
           // Set role in localStorage
-          if (userSignup.email === "khaijudipesh1@gmail.com") {
+          if (userSignup.email === "khaijudipesh@gmail.com") {
             localStorage.setItem("role", "admin");
             toast.success("Login successful! Redirecting to admin dashboard...");
             setTimeout(() => {

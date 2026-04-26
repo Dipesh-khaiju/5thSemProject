@@ -102,12 +102,21 @@ const AllProducts = ({ AddToCart }) => {
               </h2>
               <p className="mt-1 text-white">price: Rs.{AllItems.price}</p>
             </div>
-            <button
-              className="mt-6 bg-blue-700 hover:bg-blue-900 focus:ring-4 focus:ringblue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 text-white"
-              onClick={() => AddToCart(AllItems)}
-            >
-              Add to cart
-            </button>
+            {AllItems.stock <= 0 || AllItems.availabilityStatus === "Out of Stock" ? (
+              <button
+                className="mt-6 bg-red-600 cursor-not-allowed font-medium rounded-lg text-sm px-5 py-2.5 text-center text-white"
+                disabled
+              >
+                Out of Stock
+              </button>
+            ) : (
+              <button
+                className="mt-6 bg-blue-700 hover:bg-blue-900 focus:ring-4 focus:ringblue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 text-white"
+                onClick={() => AddToCart(AllItems)}
+              >
+                Add to cart
+              </button>
+            )}
           </div>
         ))}
       </div>
